@@ -1,12 +1,9 @@
 <h1 align="center">⚡️FinBERT2-Suits:中文金融文本处理定制BERTs套件 </h1>
 <p align="center">
-    <a href="https://huggingface.co/collections/BAAI/bge-66797a74476eb1f085c7446d">
+    <a href="https://github.com/mengyougithub/FinBERT2-Suits">
         <img alt="Build" src="https://img.shields.io/badge/FinBERT2--Suits-🤗-yellow">
     </a>
-    <a href="https://github.com/mengyougithub/FinBERT2-Suits">
-            <img alt="Build" src="https://img.shields.io/badge/Contribution-Welcome-blue">
-    </a>
-    <a href="https://github.com/FlagOpen/FlagEmbedding/blob/master/LICENSE">
+    <a href="https://github.com/mengyougithub/FinBERT2-Suits/blob/master/LICENSE">
         <img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-green">
     </a>
 
@@ -25,21 +22,21 @@
 
 ![projects](./imgs/projects.svg)
 
-🌟Paper🌟: http://arxiv.org/abs/2405.16546
+🌟Paper🌟: 敬请期待
 
-🌟Datasets and Checkpoints🌟: https://huggingface.co/IR-Cocktail
+🌟Datasets and Checkpoints🌟: 敬请期待
 
 
 ## 项目背景
 尽管目前千亿级别大语言模型拥有强大的能力，然而在金融领域的实际部署和应用中存在以下问题：
 1、在对百万级文档打标签场景下面临高推理成本和慢响应时间问题。
-2、复杂专业任务如细粒度金融文本情感分类时，千亿级别LLM性能如果不经微调其性能不如BERT等专门的小型模型好
+2、复杂专业任务如细粒度金融文本情感分类时，千亿级别LLM性能如果不经微调其性能不如BERT等专门的小型模型好。
 3、面对涉及超大规模文本数据集的任务：如检索与主题建模，LLM受限于窗口大小和推理成本没有成熟的解决方案。
-4、模型维护和适配成本高：如大量私有领域数据如何高效利用来提高模型性能、模型内部知识更新，tokenizer如何适配金融领域
+4、模型维护和适配成本高：如大量私有领域数据如何高效利用来提高模型性能、模型内部知识更新，tokenizer如何适配金融领域。
 5、私有化部署和用户数据隐私问题。
 
-基于0.1Ｂ参数量的BERT-base的解决方案可以缓解上述问题：
-1、轻量化，降低成本：在对百万级文档打标签场景下，模型内部知识更新、重新训练，向量数据库构建等场景下高效推理或训练
+基于0.1Ｂ参数量的FinBERT2可以缓解上述问题：
+1、轻量化，降低成本：在对百万级文档打标签场景下，模型内部知识更新、重新训练，向量数据库构建等场景下高效推理或训练。
 2、大规模领域训练，更高性能：虽然没有直接写提示词方便，但是下游领域任务性能得到普遍提升。
 3、广泛的任务适用：除了传统的分类任务，还可经过对比学习微调用于检索任务和主题建模任务。
 
@@ -61,22 +58,14 @@ FinBERT2-Suits 是熵简科技基于丰富的金融领域数据开发的面向�
 ```shell
 .
 ├── dataset  # * dataset path
-│   ├── climate-fever
-│   ├── cqadupstack
-│   ├── ...
-│   ├── trec-covid
-│   └── webis-touche2020 
-└── benchmark  # * evaluation benchmark
-    ├── beir  # * requirements codes from beir
-    ├── evaluate  # * codes for evaluation
-    │   ├── rerank # * code for re-rankers
-    │   ├── retrieval # * code for retreiever
-    │   └── utils # * codes for different evaluation setting
-    └── shell  # * script for quick evaluation
+
+└── model  # * 
+    ├── 
+
 ```
 
 ## 更新
-- 12/15/2024：创建github项目，发布初版FinBERT2-Suits
+- 12/15/2024：创建github项目
                              |
 
 ## Reference:
@@ -96,13 +85,7 @@ FinBERT2-Suits 是熵简科技基于丰富的金融领域数据开发的面向�
 
 如果您觉得我们的工作有所帮助，请考虑点个星 :star: 和引用以下论文:
 ```
-@misc{cocktail,
-      title={LM-Cocktail: Resilient Tuning of Language Models via Model Merging}, 
-      author={Shitao Xiao and Zheng Liu and Peitian Zhang and Xingrun Xing},
-      year={2023},
-      eprint={2311.13534},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@misc{
 }
 ```
 ## License
