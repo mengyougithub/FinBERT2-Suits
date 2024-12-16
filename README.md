@@ -79,7 +79,7 @@ FinBERT2-Suits 是熵简科技基于丰富的金融领域数据开发的面向�
 
 4、BERTopic (https://github.com/MaartenGr/BERTopic): 利用BERT和类TF-IDF来创建可解释的主题模型。
 
-5、FinBERT (https://github.com/valuesimplex/FinBERT)：熵简科技第一代FinBER
+5、FinBERT (https://github.com/valuesimplex/FinBERT): 熵简科技第一代FinBER
 
 ## Citation
 
